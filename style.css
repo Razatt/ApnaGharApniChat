@@ -1,0 +1,134 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    background: linear-gradient(135deg, #ffe8e5, #ffe1dd); /* Light tomato red gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); /* Light polished gradient */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Deep shadow for a 3D effect */
+    width: 600px; /* Increased width */
+    min-height: 500px; /* Decreased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to start */
+    align-items: center;
+}
+
+/* Header Image Styles */
+.header-image {
+    width: 130px; /* Adjust image size to fit new width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below image */
+    border-radius: 50%; /* Make image circular */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Input Fields */
+input {
+    width: 90%; /* Decrease width for a better layout */
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #ff7f5c; /* Highlighted border */
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fffaf5; /* Warm, inviting input background */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect on input fields */
+input:focus {
+    border-color: #ff6347; /* Tomato red focus */
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* Glow effect */
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(90deg, #ff6347, #ff8563); /* Bright tomato red gradient */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    width: 180px; /* Increased button width */
+    height: 50px; /* Consistent button height */
+    box-shadow: 0 5px 15px rgba(255, 99, 71, 0.4); /* Attractive shadow */
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    background: linear-gradient(90deg, #ff8563, #ff6347); /* Reverse gradient on hover */
+    transform: translateY(-3px) scale(1.05); /* Lift and enlarge slightly */
+    box-shadow: 0 8px 20px rgba(255, 99, 71, 0.6); /* Enhanced hover shadow */
+}
+
+/* Align Buttons Horizontally */
+.payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    width: 90%; /* Stretch buttons across container */
+}
+
+.payment-options button {
+    margin: 0 10px; /* Consistent spacing between buttons */
+}
+
+/* Hidden Class for Conditional Display */
+.hidden {
+    display: none;
+}
+
+/* Message Display */
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ff6347; /* Matching tomato red for error */
+    font-weight: bold;
+}
+
+/* Success Message Color */
+#message.success {
+    color: #4caf50; /* Bright green for success */
+}
+
+/* Container Heading Styles */
+.container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Section Headings */
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #ff6347; /* Vibrant tomato red for headings */
+}
+
+/* On Hover Shadow for Input Fields */
+input:hover {
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.2);
+}
+
+/* Submit Button Alignment */
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
